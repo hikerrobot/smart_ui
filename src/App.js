@@ -1,8 +1,16 @@
 import AppBar from '@material-ui/core/AppBar';  
 import Toolbar from '@material-ui/core/Toolbar'; 
+import { withStyles} from '@material-ui/core/styles';
+import EmojiObjectsIcon from '@material-ui/icons/EmojiObjects';
 
 import './App.css';
 import MyScreen from './MyScreen';
+
+const styles = theme => ({
+  buttonPadding: {    
+    padding: '30px',   
+  },
+});
 
 function App() {
   return (
@@ -11,12 +19,14 @@ function App() {
         <Toolbar>  
           <div style={{ 'paddingLeft': "600px" }}>Moto Smart</div>  
         </Toolbar>  
-      </AppBar>  
+      </AppBar>
       <header>
-          <MyScreen/>
+          {/* <MyScreen className="classes.buttonPadding"/> */}
+          <EmojiObjectsIcon color="primary" style={{padding: '30px'}}/>
+          text
       </header>
     </div>
   );
-}
+} 
 
-export default App;
+export default withStyles(styles)(App);

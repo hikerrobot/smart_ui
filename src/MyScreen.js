@@ -5,7 +5,7 @@ import Box from '@material-ui/core/Box';
 export class MyScreen extends Component {
     render() {
         return (
-            <Box p={2}>
+            <Box>
 
                 <EmojiObjectsIcon color="primary" />
             </Box>
