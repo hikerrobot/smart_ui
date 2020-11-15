@@ -1,5 +1,5 @@
 import AppBar from '@material-ui/core/AppBar';  
-import Toolbar from '@material-ui/core/Toolbar';  
+import Toolbar from '@material-ui/core/Toolbar'; 
 
 import './App.css';
 import MyScreen from './MyScreen';
@@ -12,8 +12,8 @@ function App() {
           <div style={{ 'paddingLeft': "600px" }}>Moto Smart</div>  
         </Toolbar>  
       </AppBar>  
-      <header className="App-header">
-          <MyScreen />
+      <header>
+          <MyScreen/>
       </header>
     </div>
   );
