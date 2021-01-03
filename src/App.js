@@ -2,6 +2,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar'; 
 import { withStyles} from '@material-ui/core/styles';
 import EmojiObjectsIcon from '@material-ui/icons/EmojiObjects';
+import { Power } from 'react-bootstrap-icons';
 
 import './App.css';
 import MyScreen from './MyScreen';
@@ -23,6 +24,7 @@ function App() {
       <header>
           {/* <MyScreen className="classes.buttonPadding"/> */}
           <EmojiObjectsIcon color="primary" style={{padding: '30px'}}/>
+          <Power style={{padding: '30px'}} />
           text
       </header>
     </div>
