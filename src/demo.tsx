@@ -17,6 +17,10 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
+function wakeNas() {
+  alert('wakeNas');
+}
+
 export default function CenteredGrid() {
   const classes = useStyles();
 
@@ -25,7 +29,7 @@ export default function CenteredGrid() {
       <Grid container spacing={2}>
         <Grid item>
           <Paper className={classes.paper}>
-            <Button variant="contained" color="primary">
+            <Button variant="contained" color="primary" onClick={wakeNas}  >
               wake nas
             </Button>
           </Paper>
