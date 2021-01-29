@@ -4,6 +4,8 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 
+const fetch = require('node-fetch');
+
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
@@ -17,9 +19,17 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-function wakeNas() {
-  alert('wakeNas');
+async function wakeNas() {
+
+  const response = await fetch('http://localhost:3001/wakerig');
+  const data = await response.text();
+
+  console.log(data);
+  // TODO add error handling https://github.com/node-fetch/node-fetch
+
 }
+
+
 
 export default function CenteredGrid() {
   const classes = useStyles();
