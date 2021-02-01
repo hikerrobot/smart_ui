@@ -1,10 +1,7 @@
 {
   "title": "Material demo",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "react-scripts start"
   },
   "main": "index.tsx",
   "devDependencies": {
@@ -16,23 +13,8 @@
     "@material-ui/icons": "4.11.2",
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "node-fetch": "^2.6.1",
     "react": "latest",
     "react-dom": "latest",
     "typescript": "latest"
-  },
-  "name": "appbar-and-grid",
-  "version": "0.0.33",
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
 }
