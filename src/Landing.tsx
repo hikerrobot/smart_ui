@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
 async function wakeNas() {
 
-  const response = await fetch('http://localhost:3001/wakerig');
+  const response = await fetch('http://localhost:3001/wakenas');
   const data = await response.text();
 
   console.log(data);
