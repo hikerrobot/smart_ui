@@ -6,6 +6,11 @@ import Button from "@material-ui/core/Button";
 
 const fetch = require('node-fetch');
 
+import * as config from './config.json';
+console.log('host = ' + config.host);
+
+const host = config.host;
+
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
@@ -21,7 +26,8 @@ const useStyles = makeStyles((theme: Theme) =>
 
 async function wakeNas() {
 
-  const response = await fetch('http://localhost:3001/wakenas');
+  const url = 'http://' + host + ':3001/wakenas';
+  const response = await fetch(url);
   const data = await response.text();
 
   console.log(data);
