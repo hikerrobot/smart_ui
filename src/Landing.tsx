@@ -35,7 +35,7 @@ export default function CenteredGrid() {
   return (
     <div className={classes.root}>
       <Grid container spacing={2}>
-        <Grid item xs={3}>
+        <Grid item xs={4}>
           <Paper className={classes.paper}>
             <Button variant="contained" color="primary" onClick={wakeNas}  >
               wake nas
