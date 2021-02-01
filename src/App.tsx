@@ -1,14 +1,14 @@
 import React from "react";
 
 import ButtonAppBar from "./ButtonAppBar";
-import Demo from "./demo";
+import Landing from "./Landing";
 
 export default function App() {
   return (
     <div>
       <ButtonAppBar />
       <header>
-        <Demo />
+        <Landing />
       </header>
     </div>
   );
