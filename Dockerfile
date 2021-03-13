@@ -14,5 +14,5 @@ RUN npm i && npm install -g serve && \
 
 EXPOSE 5000
 
-CMD ["serve", "-s build"]
+CMD serve -s build
 
