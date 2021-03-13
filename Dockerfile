@@ -1,6 +1,5 @@
 FROM node:latest
 
-#ENV NODE_ENV=production
 ENV PATH /app/node_modules/.bin:$PATH
 
 WORKDIR /app
@@ -13,8 +12,7 @@ COPY ./src/ ./src/
 RUN npm i && npm install -g serve && \
   npm run build
 
-
 EXPOSE 5000
 
-CMD "serve -s build"
+CMD ["serve", "-s build"]
 
